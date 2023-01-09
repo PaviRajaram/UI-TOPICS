@@ -1,23 +1,13 @@
-
-/*function validate(){
-
-
-if( document.getElementsByName.myForm.Name.value == "" ) {
-    alert( "Please provide your name!" );
-    document.myForm.Name.focus() ;
-    return false;
- }
  
-}*/
- var username=document.getElementById("username").value;
- var psw=document.getElementById("psw").value;
-
  function validate(){
-    if(username=="")
+     var uname=document.getElementById("username").value;
+     var pswd=document.getElementById("psw").value;
+
+    if(uname=="")
     {
         alert("Enter your username ");
     }
-    else if(psw==""){
+    else if(pswd==""){
         alert("Enetr your 8 digit password");
     }
     else alert("Thankyou for Login");
@@ -26,6 +16,6 @@ if( document.getElementsByName.myForm.Name.value == "" ) {
  clear=()=>{
     document.getElementById("username").value="";
     document.getElementById("psw").value=""
-    document.myForm.username.focus();
+   
  }
 
